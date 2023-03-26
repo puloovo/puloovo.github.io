@@ -1,0 +1,48 @@
+.forumBGC {
+  color: rgb(255, 255, 255);
+}
+
+.qaPage {
+  text-align: center;
+  background-color: rgb(223, 183, 123);
+}
+.qaPage > h1 {
+  font-size: 90px;
+}
+.qaPage > p {
+  position: relative;
+  font-size: 30px;
+  top: 30px;
+}
+
+.QAinfoPage {
+  background-color: rgb(31, 50, 95);
+}
+
+.QAinfo {
+  display: flex;
+}
+.QAinfo .QAinfoTitle {
+  text-align: center;
+}
+.QAinfo .QAinfoTitle h3 {
+  border-bottom: 5px solid rgb(179, 45, 41);
+}
+.QAinfo .QAinfoTitle h3:hover {
+  background-color: rgb(179, 45, 41);
+}
+
+.QAinfoQuestion .Question {
+  text-align: start;
+}
+.QAinfoQuestion .Question:hover {
+  background-color: rgb(16, 94, 140);
+}
+.QAinfoQuestion .Question .QuestionPic > img {
+  width: 100%;
+}
+.QAinfoQuestion ul li {
+  list-style-type: none;
+}
+
+/*# sourceMappingURL=QA.css.map */

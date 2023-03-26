@@ -1,0 +1,655 @@
+.tab-list {
+  text-align: center;
+}
+
+.tab-list-item {
+  background-color: rgb(0, 41, 80);
+  display: inline-block;
+  list-style: none;
+  padding: 10px 25px 10px 25px;
+}
+
+.tab-list-item:hover {
+  background-color: rgb(0, 92, 179);
+  /* background-color: rgb(30, 30, 30); */
+  border: solid rgb(180, 180, 180);
+  border-width: 0px 0px 2px 0px;
+  /* border: 1px solid rgb(66, 66, 66); */
+}
+
+.tab-list-item:first-child {
+  /* border: 1px solid rgb(255, 255, 255); */
+  display: inline-block;
+  list-style: none;
+  border-radius: 30px 0px 0px 30px;
+}
+
+.tab-list-item:last-child {
+  /* border: 1px solid rgb(255, 255, 255); */
+  display: inline-block;
+  border-radius: 0px 30px 30px 0px;
+}
+
+.tab-list-active {
+  border: solid rgb(100, 100, 100);
+  border-width: 0px 0px 2px 0px;
+}
+
+/* 首頁 首頁 首頁 首頁 首頁 首頁 首頁 首頁 --- 開始 --- */
+
+/* 視差滾動樣式區 */
+
+.parallax [class*="bg"] {
+  height: 80vh;
+  text-indent: -9999px;
+  /* 隠藏文字 */
+  background-attachment: fixed;
+  background-position: top;
+  background-size: cover;
+}
+
+.parallax [class*="homebg"]:nth-child(2n) {
+  box-shadow: inset 0 0 0.8em rgb(85, 85, 85);
+}
+
+.homebg1 {
+  background-image: url(https://media.contentapi.ea.com/content/dam/ea/fifa/fifa-23/fut/otw/videos/2022/09/4bb3d256-66c4-4795-399d-8a3f2a67714f.youtube/subassets/poster.jpg.adapt.crop16x9.1920w.jpg);
+}
+
+.homebg2 {
+  /* background-color: rgb(24, 32, 44); */
+  background-image: url(https://cdn1.epicgames.com/offer/05057ec2d5ea43c3b0701cc1518e0577/EGS_GothamKnights_WarnerBrosGamesMontreal_S1_2560x1440-0c43d39faa7d02a599489d98b7678527);
+}
+
+.homebg3 {
+  background-image: url(https://truth.bahamut.com.tw/s01/202210/64091fb5f9e6f236edf3bbb4af46c804.JPG);
+}
+
+.homebg4 {
+  /* background-color: rgb(24, 32, 44); */
+  background-image: url(https://images.pushsquare.com/1bcbb862fd14a/gotham-knights-poll.large.jpg);
+}
+
+/* 近期活動樣式區 */
+.homeAmusementArea {
+  width: 100%;
+  height: 100vh;
+}
+
+.homeAmusementTitle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* 快速進入各區card樣式區 */
+.homeEnterCardArea {
+  /* position: relative; */
+  /* width: 100vmax; */
+  /* height: 100%; */
+  overflow: hidden;
+  /* background-color: #af1786; */
+}
+
+.homeEnterCard {
+  /* width: 10vmax;
+    height: 10vmax; */
+  padding: 30px;
+  background-color: rgb(3, 121, 225);
+  text-align: center;
+  align-items: center;
+  transition: 0.8s;
+}
+
+.homeEnterCard img {
+  width: 15vmax;
+  height: 15vmax;
+  padding: 20px;
+}
+
+.homeEnterCard a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.homeEnterCard:hover {
+  /* width: 10vmax;
+    height: 10vmax; */
+  background-color: rgb(220, 220, 220);
+  text-align: center;
+  align-items: center;
+}
+
+.homeEnterCard:hover a {
+  color: #ffffff;
+  text-shadow: 0 0 10px #ffffff, 2px 2px 2px rgba(0, 0, 255);
+}
+
+/* 強打遊戲樣式區 */
+.hotGameCardArea {
+  overflow: hidden;
+}
+
+.hotGameCard {
+  background-color: #ffffff;
+  text-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hotGameCard a {
+  /* color: rgb(0, 92, 179); */
+  color: rgb(3, 121, 225);
+  text-decoration: none;
+}
+
+.hotGameCard a:hover {
+  font-weight: bold;
+  color: #ff2d95;
+}
+
+.hotGameCard img {
+  transition: 1s;
+}
+
+.hotGameCard img:hover {
+  transition: 1s;
+  transform: scale(1.1);
+}
+
+/* 強打遊戲的影片設定 */
+.hotGame_Main {
+  width: 100%;
+  height: 100vh;
+}
+
+.hotGame_Main video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 實況區 */
+.homeLiveStreamArea {
+  /* position: relative; */
+  /* width: 100vmax; */
+  /* height: 100vh; */
+  overflow: hidden;
+  align-items: center;
+  position: relative;
+}
+
+.homeLiveStream {
+  width: 100%;
+  /* height: 100%; */
+  object-fit: cover;
+}
+
+@keyframes swing {
+  15% {
+    transform: translateX(4px);
+  }
+
+  30% {
+    transform: translateX(-4px);
+  }
+
+  45% {
+    transform: translateX(2px);
+  }
+
+  60% {
+    transform: translateX(-2px);
+  }
+
+  75% {
+    transform: translateX(1px);
+  }
+
+  90% {
+    transform: translateX(-1px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.homeLiveHost_1 {
+  transition: 1s;
+  position: absolute;
+  width: 30%;
+  bottom: 0;
+  right: 0;
+  /* display: flex; */
+  flex-direction: column;
+}
+
+.homeLiveHost_2 {
+  transition: 1s;
+  position: absolute;
+  width: 30%;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.homeLiveHost_1:hover {
+  transition: 1s;
+  animation: swing 1s 1;
+}
+
+.homeLiveHost_2:hover {
+  transition: 1s;
+  animation: swing 1s 1;
+}
+
+.homeHotStream {
+  /* width: 10vmax;
+    height: 10vmax; */
+  padding: 10px;
+  /* border-radius: 10px; */
+  /* background-color: rgb(0, 92, 179); */
+  text-align: center;
+  align-items: center;
+  transition: 1s;
+}
+
+.homeHotStream a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.homeHotStream:hover {
+  /* width: 10vmax;
+    height: 10vmax; */
+  background-color: rgb(3, 121, 225);
+  text-align: center;
+  align-items: center;
+}
+
+.homeHotStream:hover a {
+  color: #ffffff;
+  text-shadow: 0 0 10px #ffffff, 2px 2px 2px rgba(0, 0, 255);
+}
+
+.homeHotStreamTitle {
+  width: 100%;
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: rgb(255, 255, 255);
+  text-align: left;
+}
+
+/* 最新消息card樣式區 */
+.homeNewsCardArea {
+  position: relative;
+  /* width: 80vmax; */
+  height: 80vh;
+  overflow: hidden;
+  align-items: center;
+}
+
+.homeNewsCard {
+  /* width: 50%; */
+  /* height: auto; */
+  border-radius: 10px;
+  background-image: linear-gradient(
+    rgb(0, 0, 0, 0),
+    rgb(255, 255, 255, 0.7),
+    rgb(0, 0, 0, 0)
+  );
+  text-align: right;
+  box-shadow: 2px 2px 5px 2px rgba(108, 108, 108, 0.5);
+}
+
+.homeNewsCard img {
+  width: 100%;
+  /* height: auto; */
+  border-radius: 10px 10px 0px 0px;
+}
+
+.homeNewsCard span {
+  padding: 0px 5px;
+  font-size: 12px;
+  color: rgb(255, 221, 0);
+}
+
+.swiper {
+  width: 100%;
+  position: relative;
+  margin-top: 15vmin;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  /* background-color: red; */
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+/* 首頁 首頁 首頁 首頁 首頁 首頁 首頁 首頁 --- 結束 --- */
+
+/* 遊戲資訊頁說明 遊戲資訊頁說明 遊戲資訊頁說明 --- 開始 --- */
+.gamePhotoCoverBox {
+  /* width: 100vmin; */
+  /* height: 80vmin; */
+  background-color: rgba(88, 88, 88, 0.3);
+}
+
+.gameDetail {
+  background-color: rgba(88, 88, 88, 0.3);
+  font-size: 13px;
+  text-align: center;
+  /* justify-content: center; */
+}
+
+.gameDetail th {
+  /* color: white; */
+  background-color: rgb(65, 65, 65);
+  width: 8em;
+  height: 2.5em;
+  text-align: center;
+  border: solid rgba(88, 88, 88, 0.3);
+  border-width: 0px 1px 0px 0px;
+}
+
+.gameDetail td {
+  background-color: rgb(0, 41, 80);
+  border: 1px 0px 1px 0px solid rgba(88, 88, 88, 0.3);
+  width: 12em;
+  height: 3em;
+  padding: 0px 10px;
+  text-align: left;
+  align-items: center;
+}
+
+.gameDetail td:hover {
+  background-color: rgb(0, 92, 179);
+}
+
+.gameSpec {
+  background-color: #5858584d;
+  font-size: 13px;
+  text-align: center;
+  justify-content: center;
+}
+
+.gameSpec th {
+  /* color: white; */
+  background-color: rgb(65, 65, 65);
+  width: 15em;
+  height: 2.5em;
+  padding: 0px 10px;
+  text-align: center;
+  border: solid rgba(88, 88, 88, 0.3);
+  border-width: 0px 1px 0px 0px;
+}
+
+.gameSpec td {
+  background-color: rgb(0, 41, 80);
+  border: 1px 0px 1px 0px solid rgba(88, 88, 88, 0.3);
+  width: 30em;
+  height: 2.5em;
+  padding: 0px 10px;
+  text-align: left;
+  align-items: center;
+}
+
+.gameSpec td:hover {
+  background-color: rgb(0, 92, 179);
+}
+
+/* 遊戲圖片區 gamePhotoGroup */
+.gamePhotoGroup {
+  background-image: url(https://cdn.discordapp.com/attachments/1054405459672571928/1054996516739227718/allBackground.png);
+  background-position: center;
+}
+
+/* 遊戲第一區圖片區 gamePhotoGroupA */
+.gamePhotoGroupA {
+  width: 100%;
+  padding: 10px;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.gamePhotoA {
+  overflow: hidden;
+  margin: 0px 5px;
+  width: 80px;
+  height: 300px;
+  transition: 1s;
+}
+
+.gamePhotoA:hover {
+  width: 500px;
+  transition: 1s;
+}
+
+.gamePhotoA img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: 1s;
+}
+
+/* 遊戲第二區圖片區 gamePhotoGroupB */
+.gamePhotoGroupB {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+.gamePhotoGroupB h5 {
+  padding: 10px;
+  text-align: left;
+}
+
+.gamePhotoGroupB img {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+/* 會員評論功能 */
+.gameReplyUser {
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px 0px 0px 10px;
+  background-color: rgb(0, 41, 80);
+  border: solid rgb(100, 100, 100);
+  border-width: 0px 0px 2px 0px;
+}
+
+.gameReplyUser img {
+  text-align: center;
+  width: 12vmin;
+  border-radius: 10px;
+}
+
+.gameReplyList {
+  padding: 10px;
+  border-radius: 0px 10px 10px 0px;
+  background-color: rgb(0, 41, 80);
+  border: solid rgb(100, 100, 100);
+  border-width: 0px 0px 2px 0px;
+}
+
+/* 遊戲資訊頁說明 遊戲資訊頁說明 遊戲資訊頁說明 --- 結束 --- */
+
+/* 周邊商品資訊頁說明 周邊商品資訊頁說明 周邊商品資訊頁說明 --- 開始 --- */
+/* 周邊介紹、規格選擇購買按鈕區 */
+.periScrollbar {
+  display: block;
+  /* width: 100%; */
+  overflow: auto;
+  height: 60vh;
+}
+
+.periPhotoCoverBox {
+  /* width: 100vmin; */
+  /* height: 80vmin; */
+  background-color: rgba(88, 88, 88, 0.3);
+  text-align: center;
+}
+
+.periPhotoCoverBox img {
+  width: 100%;
+  /* height: 80%; */
+}
+
+.periDetail {
+  background-color: rgba(88, 88, 88, 0.3);
+  font-size: 15px;
+  text-align: left;
+  /* justify-content: center; */
+}
+
+.periDetail h3 {
+  color: rgb(255, 227, 75);
+  font-weight: bold;
+  padding: 10px 0px;
+}
+
+.periDetail h4 {
+  color: rgb(255, 15, 71);
+  font-weight: bold;
+  text-decoration: underline;
+  padding: 10px 0px;
+}
+
+/* 周邊說明的圖片區 periPhotoGroup */
+.periPhotoGroup {
+  background-image: url(https://cdn.discordapp.com/attachments/1054405459672571928/1054996516739227718/allBackground.png);
+  background-position: center;
+  text-align: center;
+}
+
+.periPhotoGroup h3 {
+  padding: 20px 0px;
+}
+
+/* 周邊介紹唯一圖片區 periPhotoGroupA */
+.periPhotoGroupA {
+  width: 100%;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.periPhotoA {
+  padding: 10px;
+}
+
+.periPhotoA img {
+  width: 100vmin;
+}
+
+/* 周邊商品資訊頁說明 周邊商品資訊頁說明 周邊商品資訊頁說明 --- 結束 --- */
+
+/* 實況直播 實況直播 實況直播 實況直播 實況直播 --- 開始 --- */
+
+.liveOnShow {
+  /* justify-content: center; */
+  justify-items: center;
+}
+
+/* 播放清單卷軸樣式 */
+.liveScrollbar {
+  display: block;
+  /* width: 100%; */
+  overflow: auto;
+  height: 60vmin;
+}
+
+.liveOnTitle {
+  width: 100%;
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  /* color: rgb(0, 41, 80); */
+  text-align: left;
+}
+
+.liveOnTitle:hover {
+  width: 100%;
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: rgb(3, 121, 225);
+  text-align: left;
+}
+
+.liveOnShowItem {
+  text-align: center;
+}
+
+.liveOnShowItem img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.liveVideoGroup {
+  background-image: url(https://cdn.discordapp.com/attachments/1054405459672571928/1054996516739227718/allBackground.png);
+  background-position: center;
+  text-align: center;
+}
+
+.liveVideoTitle {
+  width: 100%;
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: rgb(255, 255, 255);
+  text-align: left;
+}
+
+.liveCase {
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+  transition: 0.8s;
+}
+
+.liveCase a {
+  text-decoration: none;
+}
+
+.liveCase img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.liveCase:hover {
+  border-radius: 10px;
+  background-color: rgb(3, 121, 225);
+  text-align: center;
+  align-items: center;
+}
+
+/* 實況直播 實況直播 實況直播 實況直播 實況直播 --- 結束 --- */
